@@ -5,22 +5,29 @@
   <title>Basketball Team Signup</title>
  </head>
  <body>
-   <form method="POST" action="newteam">
-     <label for= "newteam[teamname]">Team Name:</label>
-     <input type= 'text' teamname="newteam[teamname]"/>
-     <br>
+   <form method="POST" action="/team">
+   <label for="newteam[name]">Team Name:</label>
+    <input type='text' name="newteam[name]"/>
+    <br>
       <label for= "newteam[coach]">Coach:</label>
-     <input type= 'text' coach="newteam[coach]"/>
+     <input type= 'text' name="newteam[coach]"/>
      <br>
-    <label for= "newteam[pointguard]">Point Guard:</label>
-     <input type= 'text' pointguard="newteam[pointguard]"/>
+    <label for= "newteam[pg]">Point Guard:</label>
+     <input type= 'text' pg="newteam[pg]"/>
      <br>
-      <label for= "newteam[shootingguard]">Shooting Guard:</label>
-     <input type= 'text' shootingguard="newteam[shootingguard]"/>
+      <label for= "newteam[sg]">Shooting Guard:</label>
+     <input type= 'text' name="newteam[sg]"/>
      <br>
-     <label for= "newteam[smallforward]">Small Forward:</label>
-     <input type= 'text' smallforward="newteam[smallforward]"/>
+     <label for= "newteam[sf]">Small Forward:</label>
+     <input type= 'text' name="newteam[sf]"/>
      <br>
+      <label for= "newteam[pf]">Power Forward:</label>
+     <input type= 'text' name="newteam[pf]"/>
+     <br>
+      <label for= "newteam[center]">Center:</label>
+     <input type= 'text' center="newteam[center]"/>
+     <br>
+       <input type="submit" id="Submit" />
    </form>
  </body>
 </html>
